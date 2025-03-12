@@ -1,4 +1,4 @@
-/*jshint esversion: 8 */
+/* jshint esversion: 8 */
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
@@ -13,7 +13,7 @@ const searchRoutes = require('./routes/searchRoutes')
 const authRoutes = require('./routes/authRoutes/auth')
 
 const connectToDatabase = require('./models/db')
-const { loadData } = require('./util/import-mongo/index')
+// const { loadData } = require('./util/import-mongo/index')
 
 const app = express()
 app.use('*', cors())
