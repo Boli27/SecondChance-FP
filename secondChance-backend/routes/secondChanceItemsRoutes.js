@@ -62,7 +62,10 @@ router.post('/', upload.single('file'), async (req, res, next) => {
 
         secondChanceItem = await collection.insertOne(secondChanceItem);
 
-        res.status(201).json(secondChanceItem.ops[0]);
+        res.status(201).json({
+            id: secondChanceItem.insertedId,
+            message: "Item added successfully"
+        });        
     } catch (e) {
         next(e);
     }
