@@ -1,6 +1,5 @@
 require('dotenv').config()
 const express = require('express')
-const axios = require('axios')
 const logger = require('./logger')
 const expressPinoLogger = require('express-pino-logger')
 
