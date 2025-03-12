@@ -1,12 +1,24 @@
 # coding-project-template
 
-Despliegue Backend
-Paso 1: deploymongo y configurar la bd (Rellenar segun /util/mongo-import)
-paso 2: configurar las variables de entorno segun la bd de mongo desplegada
-paso 3: crear la imagen con el dockerfile de backend
-paso 4: aplicar el despliegue del backend "deployment.yml"
+## Despliegue Backend  
 
-Despliegue frontend
-paso 1: modificar la varibale de entorno segun el enlace de despliegue del backend
-Paso 2: Npm i y npm start para levantar el front
-Paso 3: crear la imagen con el dockerfile de front y ejecutar ese front.
+**Paso 1:** Deploy Mongo y configurar la BD (Rellenar según `/util/mongo-import`).  
+
+**Paso 2:** Configurar las variables de entorno según la BD de Mongo desplegada.  
+
+**Paso 3:** Crear la imagen con el Dockerfile de backend.  
+
+**Paso 4:** Aplicar el despliegue del backend con `deployment.yml`.  
+
+---
+
+## Despliegue Frontend  
+
+**Paso 1:** Modificar la variable de entorno según el enlace de despliegue del backend.  
+
+**Paso 2:** Ejecutar:  
+```sh
+npm install  
+npm start
+```
+**Paso 3:** Crear la imagen con el Dockerfile de front y ejecutar ese front.
