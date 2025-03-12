@@ -10,7 +10,7 @@ const path = require('path');
 
 const secondChanceRoutes = require('./routes/secondChanceItemsRoutes');
 const searchRoutes = require('./routes/searchRoutes');
-const authRoutes = require('./routes/authRoutes');
+const authRoutes = require('./routes/authRoutes/authRoutes');
 
 const connectToDatabase = require('./models/db');
 const { loadData } = require("./util/import-mongo/index");
