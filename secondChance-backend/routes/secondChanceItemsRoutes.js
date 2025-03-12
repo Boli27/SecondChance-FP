@@ -9,10 +9,10 @@ const directoryPath = 'public/images'
 
 // Set up storage for uploaded files
 const storage = multer.diskStorage({
-  destination(req, file, cb) {
+  destination (req, file, cb) {
     cb(null, directoryPath) // Specify the upload directory
   },
-  filename(req, file, cb) {
+  filename (req, file, cb) {
     cb(null, file.originalname) // Use the original file name
   }
 })
