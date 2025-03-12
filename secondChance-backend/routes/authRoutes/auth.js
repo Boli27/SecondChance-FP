@@ -4,13 +4,13 @@ const connectToDatabase = require('../../models/db')
 const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const dotenv = require('dotenv')
-const pino = require('pino')  // Import Pino logger
-const { body, validationResult } = require('express-validator')
+const pino = require('pino') // Import Pino logger
+const { validationResult } = require('express-validator')
 
 dotenv.config()
 
 const JWT_SECRET = process.env.JWT_SECRET
-const logger = pino()  // Create a Pino logger instance
+const logger = pino() // Create a Pino logger instance
 
 router.post('/register', async (req, res) => {
   try {
